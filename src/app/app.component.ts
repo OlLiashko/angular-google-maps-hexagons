@@ -173,7 +173,7 @@ export class AppComponent implements OnInit {
     this.layers = [];
   }
 
-  checkPolygonVisibility(): void {
+  private checkPolygonVisibility(): void {
     const bounds = this.map.getBounds();
     if (!bounds) return;
 
